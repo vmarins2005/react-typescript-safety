@@ -38,7 +38,7 @@ export type Env = z.infer<typeof envSchema>
  * ATENÇÃO DE SEGURANÇA: esse prefixo significa que o valor vai **para dentro do
  * bundle** e é legível por qualquer pessoa que abra o DevTools. Nenhum segredo
  * pode ter esse prefixo — nem chave de API privada, nem string de conexão, nem
- * token de serviço. Ver o projeto `react-seguranca-no-next`.
+ * token de serviço. Ver o projeto `react-nextjs-security`.
  */
 function loadEnv(): Env {
   const parsed = envSchema.safeParse(import.meta.env)
